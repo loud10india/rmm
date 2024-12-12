@@ -13,7 +13,7 @@ export default function Testimonials() {
                             <div className='col-md-10 offset-md-1 text-center'>
                                 <h2 className='section-title mb-70 mb-sm-40'>
                                     RMM is trusted by
-                                    <span className='mark-decoration-1'>&nbsp; 100+</span>
+                                    <span className='mark-decoration-1'>&nbsp;100+</span>
                                     customers.
                                 </h2>
                             </div>
