@@ -58,7 +58,7 @@ export default function Clients({ params }) {
                                 </div>
                             </ParallaxContainer>
                         </section>
-                        <section className='mt-80 mt-md-40'>
+                        <section className='mt-120 mt-md-60 mb-120 mb-md-60'>
                             <Contact />
                         </section>
                     </main>
