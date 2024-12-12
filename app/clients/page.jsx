@@ -73,106 +73,106 @@ export default function Clients({ params }) {
                                                     <table className='table-auto border-collapse border border-gray-300 w-full text-left mt-80 mb-80 container'>
                                                         <tbody className='w-full px-4'>
                                                             <tr>
-                                                                <td className='px-4 py-2 border border-gray-300' style={{ fontSize: "15px" }}>
+                                                                <td className='px-4 py-3 border border-gray-300' style={{ fontSize: "15px" }}>
                                                                     B G GRANITE, KISHANGARH
                                                                 </td>
-                                                                <td className='px-4 py-2 border border-gray-300' style={{ fontSize: "15px" }}>
+                                                                <td className='px-4 py-3 border border-gray-300' style={{ fontSize: "15px" }}>
                                                                     PARAS GRANITE, KISHANGARH
                                                                 </td>
                                                             </tr>
                                                             <tr className='bg-gray-50'>
-                                                                <td className='px-4 py-2 border border-gray-300' style={{ fontSize: "15px" }}>
+                                                                <td className='px-4 py-3 border border-gray-300' style={{ fontSize: "15px" }}>
                                                                     SHREE AGARWAL GRENITE, KISHANGARH
                                                                 </td>
-                                                                <td className='px-4 py-2 border border-gray-300' style={{ fontSize: "15px" }}>
+                                                                <td className='px-4 py-3 border border-gray-300' style={{ fontSize: "15px" }}>
                                                                     SHYAAM GRNI MARMO, KISHANGARH
                                                                 </td>
                                                             </tr>
                                                             <tr>
-                                                                <td className='px-4 py-2 border border-gray-300' style={{ fontSize: "15px" }}>
+                                                                <td className='px-4 py-3 border border-gray-300' style={{ fontSize: "15px" }}>
                                                                     SHASHI RAJ GRANITE, KISHANGARH
                                                                 </td>
-                                                                <td className='px-4 py-2 border border-gray-300' style={{ fontSize: "15px" }}>
+                                                                <td className='px-4 py-3 border border-gray-300' style={{ fontSize: "15px" }}>
                                                                     PARASHNATH GRANITE, KISHANGARH
                                                                 </td>
                                                             </tr>
                                                             <tr>
-                                                                <td className='px-4 py-2 border border-gray-300' style={{ fontSize: "15px" }}>
+                                                                <td className='px-4 py-3 border border-gray-300' style={{ fontSize: "15px" }}>
                                                                     TILAK MARBLES & GRANITE, KISHANGARH
                                                                 </td>
-                                                                <td className='px-4 py-2 border border-gray-300' style={{ fontSize: "15px" }}>
+                                                                <td className='px-4 py-3 border border-gray-300' style={{ fontSize: "15px" }}>
                                                                     SHREE DAGRA GRANITE, KISHANGARH
                                                                 </td>
                                                             </tr>
                                                             <tr>
-                                                                <td className='px-4 py-2 border border-gray-300' style={{ fontSize: "15px" }}>
+                                                                <td className='px-4 py-3 border border-gray-300' style={{ fontSize: "15px" }}>
                                                                     P V GRANITE, KISHANGARH
                                                                 </td>
-                                                                <td className='px-4 py-2 border border-gray-300' style={{ fontSize: "15px" }}>
+                                                                <td className='px-4 py-3 border border-gray-300' style={{ fontSize: "15px" }}>
                                                                     RADHA RAMAN MARBLE, KISHANGARH
                                                                 </td>
                                                             </tr>
                                                             <tr>
-                                                                <td className='px-4 py-2 border border-gray-300' style={{ fontSize: "15px" }}>
+                                                                <td className='px-4 py-3 border border-gray-300' style={{ fontSize: "15px" }}>
                                                                     GIRDHARI GRANITE, ROOPANGARH
                                                                 </td>
-                                                                <td className='px-4 py-2 border border-gray-300' style={{ fontSize: "15px" }}>
+                                                                <td className='px-4 py-3 border border-gray-300' style={{ fontSize: "15px" }}>
                                                                     SHREE RAM GRANITE, KISHANGARH
                                                                 </td>
                                                             </tr>
                                                             <tr>
-                                                                <td className='px-4 py-2 border border-gray-300' style={{ fontSize: "15px" }}>
+                                                                <td className='px-4 py-3 border border-gray-300' style={{ fontSize: "15px" }}>
                                                                     RAJDHANI MARBLE, RAJSAMAND
                                                                 </td>
-                                                                <td className='px-4 py-2 border border-gray-300' style={{ fontSize: "15px" }}>
+                                                                <td className='px-4 py-3 border border-gray-300' style={{ fontSize: "15px" }}>
                                                                     GANPATI MARBLLE, KISHANGARH
                                                                 </td>
                                                             </tr>
                                                             <tr>
-                                                                <td className='px-4 py-2 border border-gray-300' style={{ fontSize: "15px" }}>
+                                                                <td className='px-4 py-3 border border-gray-300' style={{ fontSize: "15px" }}>
                                                                     CHAPARWAL MARBLE, KISHANGARH
                                                                 </td>
-                                                                <td className='px-4 py-2 border border-gray-300' style={{ fontSize: "15px" }}>
+                                                                <td className='px-4 py-3 border border-gray-300' style={{ fontSize: "15px" }}>
                                                                     RANABAI MARBLE,ROOPANGARH
                                                                 </td>
                                                             </tr>
                                                             <tr>
-                                                                <td className='px-4 py-2 border border-gray-300' style={{ fontSize: "15px" }}>
+                                                                <td className='px-4 py-3 border border-gray-300' style={{ fontSize: "15px" }}>
                                                                     SHASHANK GRANITE, KISHANGARH
                                                                 </td>
-                                                                <td className='px-4 py-2 border border-gray-300' style={{ fontSize: "15px" }}>
+                                                                <td className='px-4 py-3 border border-gray-300' style={{ fontSize: "15px" }}>
                                                                     BAJAJ MARBLE, KISHANGARH
                                                                 </td>
                                                             </tr>
                                                             <tr>
-                                                                <td className='px-4 py-2 border border-gray-300' style={{ fontSize: "15px" }}>
+                                                                <td className='px-4 py-3 border border-gray-300' style={{ fontSize: "15px" }}>
                                                                     LUCKY STONEX, BANGLORE
                                                                 </td>
-                                                                <td className='px-4 py-2 border border-gray-300' style={{ fontSize: "15px" }}>
+                                                                <td className='px-4 py-3 border border-gray-300' style={{ fontSize: "15px" }}>
                                                                     V.K. GUPTA MARBLE, KISHANGARH
                                                                 </td>
                                                             </tr>
                                                             <tr>
-                                                                <td className='px-4 py-2 border border-gray-300' style={{ fontSize: "15px" }}>
+                                                                <td className='px-4 py-3 border border-gray-300' style={{ fontSize: "15px" }}>
                                                                     ANUPAM MARBLE, KISHANGARH
                                                                 </td>
-                                                                <td className='px-4 py-2 border border-gray-300' style={{ fontSize: "15px" }}>
+                                                                <td className='px-4 py-3 border border-gray-300' style={{ fontSize: "15px" }}>
                                                                     TRIMURTI MARBLE, ALWAR
                                                                 </td>
                                                             </tr>
                                                             <tr>
-                                                                <td className='px-4 py-2 border border-gray-300' style={{ fontSize: "15px" }}>
+                                                                <td className='px-4 py-3 border border-gray-300' style={{ fontSize: "15px" }}>
                                                                     MANOJ MARBLE, KISHANGARH
                                                                 </td>
-                                                                <td className='px-4 py-2 border border-gray-300' style={{ fontSize: "15px" }}>
+                                                                <td className='px-4 py-3 border border-gray-300' style={{ fontSize: "15px" }}>
                                                                     CENTURI STONEX, KISHANGARH
                                                                 </td>
                                                             </tr>
                                                             <tr>
-                                                                <td className='px-4 py-2 border border-gray-300' style={{ fontSize: "15px" }}>
+                                                                <td className='px-4 py-3 border border-gray-300' style={{ fontSize: "15px" }}>
                                                                     PAWANSUT MARBLE, KISHANGARH
                                                                 </td>
-                                                                <td className='px-4 py-2 border border-gray-300' style={{ fontSize: "15px" }}></td>
+                                                                <td className='px-4 py-3 border border-gray-300' style={{ fontSize: "15px" }}></td>
                                                             </tr>
                                                         </tbody>
                                                     </table>
