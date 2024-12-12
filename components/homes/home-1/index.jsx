@@ -74,7 +74,7 @@ export default function Home1({ onePage = false, dark = false }) {
             <section className={`page-section pt-0 pb-0  ${dark ? "light-content" : ""}`}> {dark ? <Testimonials2 /> : <Testimonials />}</section>
             <section className={`page-section  ${dark ? " light-content" : ""}`}>{dark ? <Brands2 /> : <Brands />}</section>
 
-            {/* <hr className={`mt-0 mb-0 ${dark ? "white" : ""}`} /> */}
+            <hr className={`mt-0 mb-0 ${dark ? "white" : ""}`} />
             <section className={`page-section  scrollSpysection  ${dark ? "bg-dark-1 light-content" : ""}`} id='contact'>
                 <Contact />{" "}
             </section>

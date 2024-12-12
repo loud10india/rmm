@@ -251,19 +251,19 @@ export const menuItems = [
             {
                 links: [
                     {
-                        href: "/products/marble",
+                        href: "/products/marble-gangsaw-machine",
                         text: "Marble Gangsaw Machine",
                     },
                     {
-                        href: "/products/slabpolisher",
+                        href: "/products/slab-polisher",
                         text: "Slab Polisher",
                     },
                     {
-                        href: "/products/stonecutter",
+                        href: "/products/stone-cutter",
                         text: "Stone Cutter",
                     },
                     {
-                        href: "/products/handlingmachines",
+                        href: "/products/handling-machines",
                         text: "Handling Machines",
                     },
                 ],
@@ -280,7 +280,7 @@ export const menuItems = [
     },
     {
         title: "Contact",
-        href: "/contact",
+        href: "/contact-us",
     },
 ];
 

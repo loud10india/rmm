@@ -9,12 +9,13 @@ export default function Footer1({ dark = false }) {
         <footer className={`page-section footer ${dark ? "bg-dark-2 light-content dark" : "bg-gray-light-1"}  pb-30`}>
             <div className='container'>
                 <div className='row pb-120 pb-sm-80 pb-xs-50'>
-                    <div className='col-md-4 col-lg-3 text-gray mb-sm-50'>
-                        <Link href={"/"} className='mb-30'>
+                    <div className='col-md-4 col-lg-3  mb-sm-50'>
+                        {/* <Link href={"/"} className='mb-30'>
                             <Image src='/assets/images/logo-blue.svg' width={105} height={34} className='light-mode-logo' alt='Your Company Logo' />
 
                             <Image src='/assets/images/logo-white.svg' width={105} height={34} className='dark-mode-logo' alt='Your Company Logo' />
-                        </Link>
+                        </Link> */}
+                        <h3 className='fw-title'>Rajasthan Machine Manufacturing</h3>
                         <p>
                             Let's discuss how we can provide you with cutting-edge stone processing machines. Reach out for detailed product
                             information, pricing, and customized solutions.

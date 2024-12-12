@@ -35,7 +35,7 @@ export default function MainBlogSinglePageFullWidth({ params }) {
                             <ParallaxContainer
                                 className='page-section bg-gray-light-1 bg-light-alpha-90 parallax-5'
                                 style={{
-                                    backgroundImage: "url(/assets/images/full-width-images/section-bg-1.jpg)",
+                                    backgroundImage: "url(/assets/images/demo-fancy/bg-shape-1.svg)",
                                 }}
                             >
                                 <div className='container position-relative pt-30 pt-sm-50'>

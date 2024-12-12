@@ -7,20 +7,18 @@ import Image from "next/image";
 export default function Team() {
     return (
         <div className='container position-relative'>
-            <div className='row'>
+            <div className='row gap-6'>
                 {/* Quote */}
                 <div className='col-md-6 mb-sm-60 mb-xs-40 d-flex align-items-center'>
-                    <blockquote className='testimonial mb-0 wow fadeInUp'>
-                        <p>Our Stone Processing Machines and Solutions</p>
+                    <div className=' mb-0 wow fadeInUp'>
+                        <h2>Our Stone Processing Machines and Solutions</h2>
                         <footer>
-                            {/* <div className='section-line mb-10' />
-                            Thomas Johnson */}
                             <div className='small'>
                                 At Rajasthan Machine Manufacturer (RMM), we deliver cutting-edge machines to optimize stone processing with precision
                                 and efficiency.
                             </div>
                         </footer>
-                    </blockquote>
+                    </div>
                 </div>
                 {/* End Quote */}
                 {/* Team Carousel */}
@@ -58,7 +56,7 @@ export default function Team() {
                                             <div className='team-item-image'>
                                                 <Image
                                                     width={600}
-                                                    height={800}
+                                                    height={400}
                                                     src={member.image}
                                                     className='wow scaleOutIn'
                                                     alt='Image Description'

@@ -14,8 +14,8 @@ export default function Header1Multipage({ links }) {
               image size for support of retina screens. See details in the template documentation. *) */}
             <div className='nav-logo-wrap local-scroll'>
                 <Link href={`/`} className='logo'>
-                    <Image src='/assets/images/logo-blue.svg' alt='Your Company Logo' width={110} height={36} className='light-mode-logo' />
-                    <Image src='/assets/images/logo-white.svg' alt='Your Company Logo' width={110} height={36} className='dark-mode-logo' />
+                    <Image src='/assets/images/RMM_Logo_B.svg' alt='Your Company Logo' width={240} height={64} className='light-mode-logo' />
+                    <Image src='/assets/images/RMM_Logo_W.svg' alt='Your Company Logo' width={240} height={64} className='dark-mode-logo' />
                 </Link>
             </div>
             {/* Mobile Menu Button */}
@@ -32,7 +32,7 @@ export default function Header1Multipage({ links }) {
                 </ul>
                 <ul className='items-end clearlist'>
                     <li>
-                        <Link href='/contact' className='opacity-1 no-hover'>
+                        <Link href='/contact-us' className='opacity-1 no-hover'>
                             <span className='link-hover-anim underline' data-link-animate='y'>
                                 <span className='link-strong link-strong-unhovered'>Let's work together</span>
                                 <span className='link-strong link-strong-hovered' aria-hidden='true'>
