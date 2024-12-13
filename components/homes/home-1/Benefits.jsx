@@ -19,9 +19,9 @@ export default function Benefits() {
                         <div className='alt-features-item border-left mt-0'>
                             <div className='alt-features-icon'>
                                 <svg
-                                    width={24}
-                                    height={24}
-                                    viewBox='0 0 24 24'
+                                    width={48}
+                                    height={64}
+                                    viewBox='0 0 48 64'
                                     fill='currentColor'
                                     aria-hidden='true'
                                     focusable='false'

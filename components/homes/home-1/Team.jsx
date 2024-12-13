@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import { teamMembers } from "@/data/team";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Team() {
     return (
@@ -54,22 +55,26 @@ export default function Team() {
                                     <div className='team-carousel-item'>
                                         <div className='team-item'>
                                             <div className='team-item-image'>
-                                                <Image
-                                                    width={600}
-                                                    height={400}
-                                                    src={member.image}
-                                                    className='wow scaleOutIn'
-                                                    alt='Image Description'
-                                                />
+                                                <Link href={member.href}>
+                                                    <Image
+                                                        width={600}
+                                                        height={400}
+                                                        src={member.image}
+                                                        className='wow scaleOutIn'
+                                                        alt={`${member.name} image`}
+                                                    />
+                                                </Link>
                                             </div>
                                             <div className='team-item-descr'>
-                                                <div className='team-item-name'>{member.name}</div>
-                                                <div className='team-item-role'>{member.role}</div>
+                                                <Link href={member.href}>
+                                                    <div className='team-item-name'>{member.name}</div>
+                                                </Link>
                                             </div>
                                         </div>
                                     </div>
                                 </SwiperSlide>
                             ))}
+
                             <div className='owl-controls clickable'>
                                 <div className='owl-pagination'>
                                     <div className='owl-page'>

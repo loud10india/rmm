@@ -10,8 +10,9 @@ import { menuItems } from "@/data/menu";
 import Hero6 from "@/components/homes/home-1/heros/Hero6";
 
 export const metadata = {
-    title: "Home 1 BG Video MultiPage || Resonance &mdash; One & Multi Page React Nextjs Creative Template",
-    description: "Resonance &mdash; One & Multi Page React Nextjs Creative Template",
+    title: "Rajasthan Machine Manufacturer | Stone Processing Machinery Experts",
+    description:
+        "Explore Rajasthan Machine Manufacturer for advanced marble and granite processing solutions. High-performance machinery for cutting, polishing, and handling stones.",
 };
 export default function Home1BGVideoMultiPage() {
     return (

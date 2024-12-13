@@ -11,8 +11,9 @@ import AnimatedText from "@/components/common/AnimatedText";
 import { menuItems } from "@/data/menu";
 import { allBlogs } from "@/data/blogs5";
 export const metadata = {
-    title: "Main Blog Single Page Full Width || Resonance &mdash; One & Multi Page React Nextjs Creative Template",
-    description: "Resonance &mdash; One & Multi Page React Nextjs Creative Template",
+    title: "Marble Gangsaw Machine | Precision Stone Cutting Solutions",
+    description:
+        "Discover our advanced marble gangsaw machines for cutting slabs with precision and efficiency. Customizable to your requirements for maximum productivity.",
 };
 export default function MarbleGangsawMachine({ params }) {
     const blog = allBlogs.filter((elm) => elm.id == params.id)[0] || allBlogs[0];
@@ -177,7 +178,7 @@ export default function MarbleGangsawMachine({ params }) {
                                                         </p>
                                                         <p>
                                                             <b>See Our Machines in Action</b>
-                                                            <p>
+                                                            <div>
                                                                 Watch our Gangsaw Machines in operation :
                                                                 <ul>
                                                                     <li>
@@ -199,7 +200,7 @@ export default function MarbleGangsawMachine({ params }) {
                                                                         </a>
                                                                     </li>
                                                                 </ul>
-                                                            </p>
+                                                            </div>
                                                         </p>
                                                         <p>
                                                             Not sure what equipment fits your business best? Call us for personalized advice and

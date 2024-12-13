@@ -61,10 +61,10 @@ export default function Footer1({ dark = false }) {
                 {/* Footer Text */}
                 <div className='row text-gray'>
                     <div className='col-md-4 col-lg-3'>
-                        <b>© IB-Themes {new Date().getFullYear()}.</b>
+                        <b>© {new Date().getFullYear()} Rajasthan Machine Manufacture. All Rights Reserved.</b>
                     </div>
                     <div className='col-md-7 offset-md-1 offset-lg-2 clearfix'>
-                        <b>Based in London, United Kingdom.</b>
+                        <b>Website Design by WEB2ATTRACT</b>
                         {/* Back to Top Link */}
                         <div className='local-scroll float-end mt-n20 mt-sm-10'>
                             <a href='#top' className='link-to-top'>

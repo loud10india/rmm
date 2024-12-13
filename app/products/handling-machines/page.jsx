@@ -11,8 +11,9 @@ import AnimatedText from "@/components/common/AnimatedText";
 import { menuItems } from "@/data/menu";
 import { allBlogs } from "@/data/blog3";
 export const metadata = {
-    title: "Main Blog Single Page Full Width || Resonance &mdash; One & Multi Page React Nextjs Creative Template",
-    description: "Resonance &mdash; One & Multi Page React Nextjs Creative Template",
+    title: "Handling Machines for Marble and Granite | Reliable Solutions",
+    description:
+        "Explore gantry, EOT, and arm cranes for efficient marble slab handling. Safe, reliable, and customizable to suit your stone processing needs.",
 };
 export default function HandlingMachines({ params }) {
     const blog = allBlogs.filter((elm) => elm.id == params.id)[0] || allBlogs[0];

@@ -1,22 +1,22 @@
 export const teamMembers = [
     {
         name: "Gangsaw Machine",
-        // role: " Precision cutting for large marble and stone blocks into slabs with minimal waste.",
+        href: "/products/marble-gangsaw-machine",
         image: "/assets/images/team/1.jpg",
     },
     {
         name: "Slab Polisher",
-        // role: "Enhances the natural beauty of stone with a flawless finish.",
+        href: "/products/slab-polisher",
         image: "/assets/images/team/4.jpg",
     },
     {
         name: "Stone Cutters",
-        // role: "Versatile and precise for all cutting needs in the marble industry.",
+        href: "/products/stone-cutter",
         image: "/assets/images/team/5.jpg",
     },
     {
         name: "Handling Machines",
-        // role: "Streamlines the lifting and movement of heavy stone slabs for safer, more efficient operations",
+        href: "/products/handling-machines",
         image: "/assets/images/team/handing-cranes.jpg",
     },
 ];

@@ -19,8 +19,9 @@ import { menuItems } from "@/data/menu";
 import { allBlogs } from "@/data/blogs4";
 import Contact from "@/components/homes/home-1/Contact";
 export const metadata = {
-    title: "Main Blog Single Page Full Width || Resonance &mdash; One & Multi Page React Nextjs Creative Template",
-    description: "Resonance &mdash; One & Multi Page React Nextjs Creative Template",
+    title: "Contact Rajasthan Machine Manufacturer | Get in Touch",
+    description:
+        "Reach out to Rajasthan Machine Manufacturer for your stone processing machinery needs. Call us at +91 98872 19894 or email info@rajasthanmm.com.",
 };
 export default function Clients({ params }) {
     const blog = allBlogs.filter((elm) => elm.id == params.id)[0] || allBlogs[0];

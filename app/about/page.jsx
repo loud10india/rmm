@@ -18,8 +18,9 @@ import Form9 from "@/components/blog/commentForm/Form9";
 import { menuItems } from "@/data/menu";
 import { allBlogs } from "@/data/blogs";
 export const metadata = {
-    title: "Main Blog Single Page Full Width || Resonance &mdash; One & Multi Page React Nextjs Creative Template",
-    description: "Resonance &mdash; One & Multi Page React Nextjs Creative Template",
+    title: "About Rajasthan Machine Manufacturer | 50+ Years of Expertise",
+    description:
+        "Discover the legacy of Rajasthan Machine Manufacturer, pioneers in the marble and stone processing industry. Trusted since 1970 for innovative machinery.",
 };
 export default function MainBlogSinglePageFullWidth({ params }) {
     const blog = allBlogs.filter((elm) => elm.id == params.id)[0] || allBlogs[0];
