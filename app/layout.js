@@ -13,6 +13,7 @@ import "tippy.js/dist/tippy.css";
 import { init_wow } from "@/utlis/initWowjs";
 import { headerChangeOnScroll } from "@/utlis/changeHeaderOnScroll";
 import WhatsappLive from "./WhatsappLive";
+import Script from "next/script";
 
 export default function RootLayout({ children }) {
     const path = usePathname();
@@ -58,6 +59,18 @@ export default function RootLayout({ children }) {
                     rel='stylesheet'
                 />
                 <link rel='icon' href='/favicon.ico' sizes='any' />
+
+                {/* Google tag (gtag.js) */}
+                <Script async src='https://www.googletagmanager.com/gtag/js?id=G-H0WTG5YR1G'></Script>
+                <Script id='google-analytics'>
+                    {`
+                        window.dataLayer = window.dataLayer || [];
+                        function gtag(){dataLayer.push(arguments);}
+                        gtag('js', new Date());
+
+                        gtag('config', 'G-H0WTG5YR1G');
+                    `}
+                </Script>
             </head>
             <body className='appear-animate body'>
                 <MainLayout>
