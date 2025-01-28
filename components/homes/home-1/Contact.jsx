@@ -1,8 +1,72 @@
 "use client";
 import AnimatedText from "@/components/common/AnimatedText";
-import React from "react";
+import React, { useState } from "react";
 
 export default function Contact() {
+    // your email address
+    const yourEmail = "poojaverma140400@gmail.com";
+
+    // State for form fields
+    const [formData, setFormData] = useState({
+        name: "",
+        email: "",
+        mobile: "",
+        message: "",
+    });
+
+    // State for form submission result
+    const [result, setResult] = useState("");
+
+    // Handle form input changes
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData((prevData) => ({
+            ...prevData,
+            [name]: value,
+        }));
+    };
+
+    // Handle form submission
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+
+        // Include additional data like firstName, lastName, etc.
+        const dataToSend = {
+            firstName: formData.name.split(" ")[0] || "", // Get first name from full name
+            lastName: formData.name.split(" ")[1] || "", // Get last name from full name
+            email: formData.email,
+            phone: formData.mobile,
+            message: formData.message,
+        };
+
+        // send form data to the server
+        try {
+            const response = await fetch("/api/contact", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(dataToSend),
+            });
+
+            if (response.ok) {
+                setResult("Message sent successfully!");
+                // Reset form fields
+                setFormData({
+                    name: "",
+                    email: "",
+                    mobile: "",
+                    message: "",
+                });
+            } else {
+                const errorData = await response.json(); // Assuming the server returns a JSON error message
+                setResult(`Failed to send the message: ${errorData.message}`);
+            }
+        } catch (error) {
+            console.error("Error submitting form:", error);
+            setResult("An error occurred. Please try again.");
+        }
+    };
     return (
         <div className='container position-relative'>
             <div className='row'>
@@ -77,7 +141,7 @@ export default function Contact() {
                                     </svg>
                                 </div>
                                 <h4 className='alt-features-title'>Location</h4>
-                                <div className='alt-features-descr'>E-232-A, TUNKRA ROAD, MODANGANJ, KISHANGARH (RAJ), AJMER, Rajasthan 305801</div>
+                                <div className='alt-features-descr'>E-232-A, TUNKRA ROAD, MODANGANJ, KISHANGARH, AJMER, Rajasthan - 305801</div>
                             </div>
                         </div>
                         {/* End Contact Item */}
@@ -87,7 +151,7 @@ export default function Contact() {
             <div className='row wow fadeInUp' data-wow-delay='0.5s'>
                 <div className='col-md-6 mb-sm-50'>
                     {/* Contact Form */}
-                    <form onSubmit={(e) => e.preventDefault()} className='form contact-form pe-lg-5' id='contact_form'>
+                    <form onSubmit={handleSubmit} className='form contact-form pe-lg-5' id='contact_form'>
                         <div className='row'>
                             <div className=''>
                                 {/* Name */}
@@ -99,6 +163,8 @@ export default function Contact() {
                                         id='name'
                                         className='input-lg round form-control'
                                         placeholder='Enter your name'
+                                        value={formData.name}
+                                        onChange={handleChange}
                                         pattern='.{3,100}'
                                         required
                                         aria-required='true'
@@ -117,6 +183,8 @@ export default function Contact() {
                                         id='email'
                                         className='input-lg round form-control'
                                         placeholder='Enter your email'
+                                        value={formData.email}
+                                        onChange={handleChange}
                                         pattern='.{5,100}'
                                         required
                                         aria-required='true'
@@ -124,15 +192,17 @@ export default function Contact() {
                                 </div>
                             </div>
                             <div className='col-lg-6'>
-                                {/* Email */}
+                                {/* Mobile */}
                                 <div className='form-group'>
-                                    <label htmlFor='mobile'>Mobile Number</label>
+                                    <label htmlFor='mobile'>Phone</label>
                                     <input
                                         type='tel'
                                         name='mobile'
                                         id='mobile'
                                         className='input-lg round form-control'
                                         placeholder='Enter your mobile number'
+                                        value={formData.mobile}
+                                        onChange={handleChange}
                                         pattern='[0-9]{10}' // Adjust the pattern for your phone number format
                                         required
                                         aria-required='true'
@@ -149,6 +219,8 @@ export default function Contact() {
                                 className='input-lg round form-control'
                                 style={{ height: 130 }}
                                 placeholder='Enter your message'
+                                value={formData.message}
+                                onChange={handleChange}
                                 defaultValue={""}
                             />
                         </div>
@@ -157,6 +229,7 @@ export default function Contact() {
                                 {/* Send Button */}
                                 <div className='pt-20'>
                                     <button
+                                        type='submit'
                                         className='submit_btn btn btn-mod btn-large btn-round btn-hover-anim'
                                         id='submit_btn'
                                         aria-controls='result'
@@ -174,7 +247,9 @@ export default function Contact() {
                                 </div>
                             </div>
                         </div>
-                        <div id='result' role='region' aria-live='polite' aria-atomic='true' />
+                        <div id='result' role='region' aria-live='polite' aria-atomic='true'>
+                            {result && <p>{result}</p>}
+                        </div>
                     </form>
                     {/* End Contact Form */}
                 </div>

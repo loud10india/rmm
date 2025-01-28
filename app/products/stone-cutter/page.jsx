@@ -1,6 +1,7 @@
 import Footer1 from "@/components/footers/Footer1";
 
 import dynamic from "next/dynamic";
+import Slider6 from "@/components/blog/sliders/Slider6";
 
 const ParallaxContainer = dynamic(() => import("@/components/common/ParallaxContainer"), {
     ssr: false, // Disable server-side rendering
@@ -62,9 +63,9 @@ export default function StoneCutter({ params }) {
                                             <div className='blog-item mb-80 mb-xs-40'>
                                                 <div className='blog-item-body'>
                                                     {/* Media Gallery */}
-                                                    {/* <div className='blog-media mb-40 mb-xs-30'>
-                                                        <Slider1 />
-                                                    </div> */}
+                                                    <div className='blog-media mb-40 mb-xs-30'>
+                                                        <Slider6 />
+                                                    </div>
                                                     <p className='lead'>
                                                         At Rajasthan Machine Manufacturer, we offer an extensive range of high-quality Stone Cutters
                                                         designed to meet the demanding needs of the stone processing industry. Our cutters are

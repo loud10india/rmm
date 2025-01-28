@@ -5,6 +5,7 @@ import dynamic from "next/dynamic";
 const ParallaxContainer = dynamic(() => import("@/components/common/ParallaxContainer"), {
     ssr: false, // Disable server-side rendering
 });
+import Slider1 from "@/components/blog/sliders/Slider1";
 
 import Header1Multipage from "@/components/headers/Header1Multipage";
 import AnimatedText from "@/components/common/AnimatedText";
@@ -65,6 +66,10 @@ export default function MarbleGangsawMachine({ params }) {
                                                     {/* <div className='blog-media mb-40 mb-xs-30'>
                                                         <Slider1 />
                                                     </div> */}
+                                                    {/* Media Gallery */}
+                                                    <div className='blog-media mb-40 mb-xs-30'>
+                                                        <Slider1 />
+                                                    </div>
                                                     <p className='lead'>
                                                         At Rajasthan Machine Manufacturer (RMM), we specialize in crafting high-performance Diamond
                                                         Gangsaw Machines designed for precision and efficiency in marble cutting. Our machines are
@@ -173,14 +178,11 @@ export default function MarbleGangsawMachine({ params }) {
                                                                 </tr>
                                                             </tbody>
                                                         </table>
-                                                        <p>
-                                                            Note: <b>All specifications are customizable based on your requirements.</b>
-                                                        </p>
-                                                        <p>
+                                                        <div>
                                                             <b>See Our Machines in Action</b>
                                                             <div>
                                                                 Watch our Gangsaw Machines in operation :
-                                                                <ul>
+                                                                {/* <ul>
                                                                     <li>
                                                                         <a
                                                                             href='https://www.youtube.com/watch?v=fbQrgRO4YBc&t=3s'
@@ -199,9 +201,37 @@ export default function MarbleGangsawMachine({ params }) {
                                                                             https://www.youtube.com/watch?v=l6X2hsr_2q0&t=7s
                                                                         </a>
                                                                     </li>
-                                                                </ul>
+                                                                </ul> */}
+                                                                <div className='mt-20 mb-20 mt-md-10 mm-md-10'>
+                                                                    <iframe
+                                                                        width='560'
+                                                                        height='315'
+                                                                        src='https://www.youtube.com/embed/fbQrgRO4YBc?si=thVC6tKsjgCbmV1Y'
+                                                                        title='YouTube video player'
+                                                                        frameborder='0'
+                                                                        allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
+                                                                        referrerpolicy='strict-origin-when-cross-origin'
+                                                                        allowfullscreen
+                                                                    ></iframe>
+                                                                </div>
+                                                                <div className='mt-20 mb-20 mt-md-10 mm-md-10'>
+                                                                    <iframe
+                                                                        width='560'
+                                                                        height='315'
+                                                                        src='https://www.youtube.com/embed/l6X2hsr_2q0?si=UbEmtni9QCeKh5l7'
+                                                                        title='YouTube video player'
+                                                                        frameborder='0'
+                                                                        allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
+                                                                        referrerpolicy='strict-origin-when-cross-origin'
+                                                                        allowfullscreen
+                                                                    ></iframe>
+                                                                </div>
                                                             </div>
+                                                        </div>
+                                                        <p>
+                                                            Note: <b>All specifications are customizable based on your requirements.</b>
                                                         </p>
+
                                                         <p>
                                                             Not sure what equipment fits your business best? Call us for personalized advice and
                                                             tailored solutions. At RMM, we’re here to ensure you invest in the right machinery for

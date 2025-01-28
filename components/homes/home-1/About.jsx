@@ -11,7 +11,7 @@ export default function About() {
                         <Image
                             width={960}
                             height={539}
-                            src='/assets/images/mission.png'
+                            src='/assets/images/rmm-factory.jpg'
                             className='image-fullwidth relative'
                             alt='Image Description'
                         />

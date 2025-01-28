@@ -1,6 +1,7 @@
 import Footer1 from "@/components/footers/Footer1";
-
+import Benefits from "@/components/homes/home-1/Benefits";
 import dynamic from "next/dynamic";
+import Faq from "@/components/common/Faq";
 
 const ParallaxContainer = dynamic(() => import("@/components/common/ParallaxContainer"), {
     ssr: false, // Disable server-side rendering
@@ -8,13 +9,11 @@ const ParallaxContainer = dynamic(() => import("@/components/common/ParallaxCont
 
 import Header1Multipage from "@/components/headers/Header1Multipage";
 import AnimatedText from "@/components/common/AnimatedText";
+const dark = false;
+import About from "@/components/homes/home-5/About";
+import MarqueeDark from "@/components/homes/home-5/MarqueeDark";
+import Marquee from "@/components/homes/home-5/Marquee";
 
-import { categories } from "@/data/categories";
-import { tags } from "@/data/tags";
-import { archiveLinks } from "@/data/archeve";
-import Slider1 from "@/components/blog/sliders/Slider1";
-import Comments from "@/components/blog/Comments";
-import Form9 from "@/components/blog/commentForm/Form9";
 import { menuItems } from "@/data/menu";
 import { allBlogs } from "@/data/blogs";
 export const metadata = {
@@ -59,73 +58,58 @@ export default function MainBlogSinglePageFullWidth({ params }) {
                             </ParallaxContainer>
                         </section>
                         <>
-                            {/* Section */}
-                            <section className='page-section'>
-                                <div className='container relative'>
+                            <section className={`page-section  scrollSpysection pb-0 ${dark ? "bg-dark-1 light-content" : ""} `} id='about'>
+                                <div className='container position-relative'>
                                     <div className='row'>
-                                        {/* Content */}
-                                        <div className='col-lg-8 offset-lg-2'>
-                                            {/* Post */}
-                                            <div className='blog-item mb-80 mb-xs-40'>
-                                                <div className='blog-item-body'>
-                                                    {/* Media Gallery */}
-                                                    <div className='blog-media mb-40 mb-xs-30'>
-                                                        <Slider1 />
-                                                    </div>
-                                                    <p className='lead'>
-                                                        RAJASTHAN MACHINE MANUFECTURER (RMM) started its operation in 1970 in KISHANGARH (Rajasthan)
-                                                        by our visionary founder Mr. Ahmed Ali on the desire to make innovative machines for the
-                                                        marble industry. We feel dignified as the company has more than 48 years of experience in the
-                                                        industry with wide technical knowledge. RMM began manufacturing Diamond Gangsaw, stone cutter,
-                                                        slab polisher, and handling machines which are used in handling of marbles and stones. Over
-                                                        the years, we have worked on cutting-edge technology in the market, offering high reliability
-                                                        and good quality products. These products have enabled the company to create new productivity
-                                                        standards in the industry.
-                                                    </p>
-                                                    <p>
-                                                        We are built around a culture of continuous improvement, quality and exceptional customer
-                                                        service and listen closely to our customers to create products that are smartly engineered and
-                                                        need-based.
-                                                    </p>
-                                                    {/* <p>
-                                                        Fusce non ante sed lorem rutrum feugiat. Vestibulum pellentesque, purus ut&nbsp;dignissim
-                                                        consectetur, nulla erat ultrices purus, ut&nbsp;consequat sem elit non sem. Morbi lacus massa,
-                                                        euismod ut turpis molestie, tristique sodales est. Integer sit amet mi id sapien tempor
-                                                        molestie in nec massa. Fusce non ante sed lorem rutrum feugiat.
-                                                    </p>
-                                                    <blockquote>
-                                                        <p>
-                                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a&nbsp;ante.
-                                                            Vestibulum pellentesque, purus ut dignissim consectetur, nulla erat ultrices purus.
+                                        <div className='col-lg-5 d-flex align-items-center mb-md-50'>
+                                            <div>
+                                                <div className='wow linesAnimIn' data-splitting='lines'>
+                                                    <h2 className='section-title mb-30 mb-sm-20'>
+                                                        <span className='text-gray'>About</span> us
+                                                    </h2>
+                                                    <div className='text-gray mb-30 mb-sm-20'>
+                                                        <p className='mb-0'>
+                                                            RAJASTHAN MACHINE MANUFECTURER (RMM) started its operation in 1970 in KISHANGARH
+                                                            (Rajasthan) by our visionary founder Mr. Ahmed Ali on the desire to make innovative
+                                                            machines for the marble industry. We feel dignified as the company has more than 48 years
+                                                            of experience in the industry with wide technical knowledge. RMM began manufacturing
+                                                            Diamond Gangsaw, stone cutter, slab polisher, and handling machines which are used in
+                                                            handling of marbles and stones. Over the years, we have worked on cutting-edge technology
+                                                            in the market, offering high reliability and good quality products. These products have
+                                                            enabled the company to create new productivity standards in the industry.
                                                         </p>
-                                                        <footer>
-                                                            Someone famous in
-                                                            <cite title='Source Title'> Source Title </cite>
-                                                        </footer>
-                                                    </blockquote> */}
-                                                    {/* <p>
-                                                        Praesent ultricies ut ipsum non laoreet. Nunc ac
-                                                        <a href='#'>ultricies</a> leo. Nulla ac ultrices arcu. Nullam adipiscing lacus in consectetur
-                                                        posuere. Nunc malesuada tellus turpis, ac pretium orci molestie vel. Morbi lacus massa,
-                                                        euismod ut turpis molestie, tristique sodales est. Integer sit amet mi id sapien tempor
-                                                        molestie in nec massa. Fusce non ante sed lorem rutrum feugiat.
-                                                    </p>
-                                                    <ul>
-                                                        <li>First item of the list</li>
-                                                        <li>Second item of the list</li>
-                                                        <li>Third item of the list</li>
-                                                    </ul>
-                                                    <p>
-                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris non laoreet dui. Morbi lacus
-                                                        massa, euismod ut turpis molestie, tristique sodales est. Integer sit amet mi id sapien tempor
-                                                        molestie in nec massa. Fusce non ante sed lorem rutrum feugiat. Vestibulum pellentesque, purus
-                                                        ut&nbsp;dignissim consectetur, nulla erat ultrices purus, ut&nbsp;consequat sem elit non sem.
-                                                    </p> */}
+                                                    </div>
                                                 </div>
                                             </div>
-                                            {/* End Post */}
                                         </div>
-                                        {/* End Content */}
+                                        <About />
+                                    </div>
+                                </div>
+                            </section>
+                            <section>
+                                <div className='page-section overflow-hidden'>{<Marquee />}</div>
+                            </section>
+                            <section className='mb-80'>
+                                <Benefits />{" "}
+                            </section>
+                            <section className='page-section z-index-1'>
+                                <div className='container position-relative'>
+                                    <div className='row position-relative'>
+                                        <div className='col-md-6 col-lg-5 mb-md-50 mb-sm-30'>
+                                            <h3 className='section-title mb-30'>Frequently Asked Questions</h3>
+
+                                            <p className='text-gray mb-0'>
+                                                Curious about how a business consulting firm can help your growth? Our FAQs provide insights into our
+                                                services, process, and expertise. Discover how Mibugo Consulting empowers businesses to overcome
+                                                challenges and achieve success.
+                                            </p>
+                                        </div>
+
+                                        <div className='col-md-6 offset-lg-1 pt-10 pt-sm-0'>
+                                            {/* <!-- Accordion --> */}
+                                            <Faq />
+                                            {/* <!-- End Accordion --> */}
+                                        </div>
                                     </div>
                                 </div>
                             </section>

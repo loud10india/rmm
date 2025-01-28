@@ -8,10 +8,11 @@ import "react-modal-video/css/modal-video.css";
 import "photoswipe/dist/photoswipe.css";
 import { usePathname } from "next/navigation";
 import { parallaxMouseMovement, parallaxScroll } from "@/utlis/parallax";
-
+import { MainLayout } from "@/components/homes/layout/mainLayout/main.layout.jsx";
 import "tippy.js/dist/tippy.css";
 import { init_wow } from "@/utlis/initWowjs";
 import { headerChangeOnScroll } from "@/utlis/changeHeaderOnScroll";
+import WhatsappLive from "./WhatsappLive";
 
 export default function RootLayout({ children }) {
     const path = usePathname();
@@ -58,7 +59,12 @@ export default function RootLayout({ children }) {
                 />
                 <link rel='icon' href='/favicon.ico' sizes='any' />
             </head>
-            <body className='appear-animate body'>{children}</body>
+            <body className='appear-animate body'>
+                <MainLayout>
+                    {children}
+                    <WhatsappLive />
+                </MainLayout>
+            </body>
         </html>
     );
 }

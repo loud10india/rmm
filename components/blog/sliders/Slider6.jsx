@@ -4,7 +4,7 @@ import { Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 const images = [
     {
-        src: "/assets/images/portfolio/Gangsaw Machine.jpg",
+        src: "/assets/images/portfolio/stone cutter.jpg",
         alt: "Image Description",
     },
 ];

@@ -1,6 +1,7 @@
 import Footer1 from "@/components/footers/Footer1";
 
 import dynamic from "next/dynamic";
+import Slider7 from "@/components/blog/sliders/Slider7";
 
 const ParallaxContainer = dynamic(() => import("@/components/common/ParallaxContainer"), {
     ssr: false, // Disable server-side rendering
@@ -62,9 +63,9 @@ export default function HandlingMachines({ params }) {
                                             <div className='blog-item mb-80 mb-xs-40'>
                                                 <div className='blog-item-body'>
                                                     {/* Media Gallery */}
-                                                    {/* <div className='blog-media mb-40 mb-xs-30'>
-                                                        <Slider1 />
-                                                    </div> */}
+                                                    <div className='blog-media mb-40 mb-xs-30'>
+                                                        <Slider7 />
+                                                    </div>
                                                     <p className='lead'>
                                                         At RMM, we offer a diverse range of high-quality handling cranes designed for maximum
                                                         performance, reliability, and safety. With a focus on advanced engineering and the safety of
@@ -246,7 +247,7 @@ export default function HandlingMachines({ params }) {
                                                         </tbody>
                                                     </table>
                                                 </div>
-
+                                                <hr className='mb-80 mb-md-40' />
                                                 <div className='row mt-20 gap-6'>
                                                     <h3>EOT Crane</h3>
                                                     <div className='col-lg-8'>
@@ -322,6 +323,7 @@ export default function HandlingMachines({ params }) {
                                                         </tbody>
                                                     </table>
                                                 </div>
+                                                <hr className='mb-80 mb-md-40' />
                                                 <h3>ARM Crane</h3>
                                                 <div className='row mt-20 gap-16'>
                                                     <div className='col-lg-8'>
@@ -397,6 +399,7 @@ export default function HandlingMachines({ params }) {
                                                         </tbody>
                                                     </table>
                                                 </div>
+                                                {/* <hr className='mb-80 mb-md-40' /> */}
                                                 <b>
                                                     <b>
                                                         <a href='/contact'>Contact us</a>&nbsp;

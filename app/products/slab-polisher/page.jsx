@@ -1,6 +1,7 @@
 import Footer1 from "@/components/footers/Footer1";
 
 import dynamic from "next/dynamic";
+import Slider5 from "@/components/blog/sliders/Slider5";
 
 const ParallaxContainer = dynamic(() => import("@/components/common/ParallaxContainer"), {
     ssr: false, // Disable server-side rendering
@@ -62,9 +63,9 @@ export default function SlabPolisher({ params }) {
                                             <div className='blog-item mb-80 mb-xs-40'>
                                                 <div className='blog-item-body'>
                                                     {/* Media Gallery */}
-                                                    {/* <div className='blog-media mb-40 mb-xs-30'>
-                                                        <Slider1 />
-                                                    </div> */}
+                                                    <div className='blog-media mb-40 mb-xs-30'>
+                                                        <Slider5 />
+                                                    </div>
                                                     <p className='lead'>
                                                         Our <b>Slab Polishing Machines</b> are designed for multi-purpose polishing, offering superior
                                                         quality, high performance, and cost efficiency. Perfectly balanced, these machines are
