@@ -7,7 +7,7 @@ import "./global.css";
 const WhatsappLive = () => {
     const whatsappNumber = "9887219894";
     const baseURL = "https://api.whatsapp.com/send/";
-    const encodedMessage = "Hey! I'm interested in booking an appointment. Please help me with my questions";
+    const encodedMessage = "Hi! I want to know about your marble and granite machines. Please help me";
     const whatsappLink = `${baseURL}?phone=${whatsappNumber}&text=${encodedMessage}&type=phone_number&app_absent=0`;
     useEffect(() => {
         const handleScroll = () => {

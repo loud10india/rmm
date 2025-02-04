@@ -2,7 +2,7 @@ export const footerLinks = [
     { name: "About Us", path: "/about" },
     { name: "Clients", path: "/clients" },
     { name: "Careers", path: "/careers" },
-    { name: "Contact", path: "/contact" },
+    { name: "Contact", path: "/contact-us" },
 ];
 
 export const footerLinks2 = [
